@@ -47,13 +47,11 @@ fi
 echo "-----> Installing Redline"
 REDLINE_VERSION="ce4112c"
 REDLINE_URL="https://heroku-buildpack-redline.s3.amazonaws.com/redline-$REDLINE_VERSION.tgz"
-cd $CACHE_DIR
+cd $BUILD_DIR
 mkdir -p .redline
 cd .redline
 curl --silent --max-time 60 -O --location $REDLINE_URL --fail || error "Failed to download $REDLINE_VERSION"
 tar -xf redline-$REDLINE_VERSION.tgz
-echo -n `pwd`
-echo -n `ls -la`
 
 
 
