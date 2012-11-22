@@ -52,6 +52,8 @@ mkdir -p .redline
 cd .redline
 curl --silent --max-time 60 -O --location $REDLINE_URL --fail || error "Failed to download $REDLINE_VERSION"
 tar -xf redline-$REDLINE_VERSION.tgz
+echo -n `pwd`
+echo -n `ls -la`
 
 
 
