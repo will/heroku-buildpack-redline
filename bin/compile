@@ -50,5 +50,5 @@ REDLINE_URL="https://heroku-buildpack-redline.s3.amazonaws.com/redline-$REDLINE_
 cd $BUILD_DIR
 (curl --silent --max-time 60 --location $REDLINE_URL --fail | tar -x) || error "Failed to download $REDLINE_VERSION"
 mv redline-deploy .redline
-
+rm .redline/*.bat
 
