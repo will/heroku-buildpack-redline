@@ -3,12 +3,15 @@ Heroku buildpack: Redline Smalltalk
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Redline Smalltalk apps.
 
+
 Usage
 -----
 
-Example usage:
+[Detailed Example](https://gist.github.com/gists/4129809)
 
-    $ heroku create --stack cedar --buildpack https://github.com/will/heroku-buildpack-redline.git
+Quick Example:
+
+    $ heroku create --buildpack https://github.com/will/heroku-buildpack-redline.git
 
     $ git push heroku master
     ...
