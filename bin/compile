@@ -50,7 +50,7 @@ REDLINE_URL="https://heroku-buildpack-redline.s3.amazonaws.com/redline-$REDLINE_
 mkdir -p .redline
 cd .redline
 curl --silent --max-time 60 -O --location $REDLINE_URL --fail || error "Failed to download $REDLINE_VERSION"
-tar -cf redline-$REDLINE_VERSION.tgz
+tar -xf redline-$REDLINE_VERSION.tgz
 
 
 
